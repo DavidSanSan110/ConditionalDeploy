@@ -15,7 +15,11 @@ The conditional deployment setup ensures that only the necessary services are bu
 
 *Complete deployment time: 7m 18s*
 
-The first image shows the complete deployment of the project, including the web application, ingest service, and coordination service. The deployment process took 7 minutes and 18 seconds to complete.
+The first image shows the complete deployment of the project, including the web application, ingest service, and coordination service. The deployment process took 7 minutes and 18 seconds to complete. You can perform a full deploy by disabling the conditional deployment workflows, enabling the "Build All" workflow and pushing a change to the repository.
+
+![Workflows](3.png)
+
+*Workflows*
 
 ### Selective Deployment (Web App)
 
