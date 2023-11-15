@@ -7,23 +7,24 @@ Conditional deployment allows for the execution of deployment tasks selectively,
 The conditional deployment setup ensures that only the necessary services are built, updated, or deployed in response to changes pushed to the respective directories, optimizing the deployment workflow and maintaining a streamlined deployment process.
 
 
-## Ejemplo de Tiempo de Despliegue
+## Deployment Times
 
-### Despliegue Completo
+### Full Deployment
 
-![Despliegue Completo](1.png)
+![Full Deployment](1.png)
 
-*Tiempo de despliegue completo: 7m 18s*
+*Complete deployment time: 7m 18s*
 
-En la imagen anterior se muestra el despliegue completo de todas las aplicaciones y servicios, lo cual ha llevado aproximadamente 7 minutos y 18 segundos.
+The first image shows the complete deployment of the project, including the web application, ingest service, and coordination service. The deployment process took 7 minutes and 18 seconds to complete.
 
-### Despliegue Selectivo - Solo Web App
+### Selective Deployment (Web App)
 
-![Despliegue Selectivo](2.png)
+![Selective Deployment](2.png)
 
-*Tiempo de despliegue selectivo (solo Web App): 1m 19s*
+*Selective deployment time: 1m 19s*
 
-En la segunda imagen, se ilustra el despliegue selectivo únicamente de la aplicación web. Se observa que este proceso ha tardado tan solo 1 minuto y 19 segundos, evidenciando la significativa mejora en el tiempo de despliegue al realizar actualizaciones puntuales en servicios específicos.
+The second image shows the deployment of the web application service only. The deployment process took 1 minute and 19 seconds to complete.
+The selective deployment of the web application service was significantly faster than the full deployment, taking only 1 minute and 19 seconds to complete. This is a 5.5x improvement in deployment time compared to the full deployment and the web app is the largest service in the project, so for other services, the improvement in deployment time would be even greater.
 
 
 ## Optimized Conditional Deployment
