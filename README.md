@@ -12,6 +12,7 @@ The conditional deployment setup ensures that only the necessary services are bu
 ### Despliegue Completo
 
 ![Despliegue Completo](1.png)
+
 *Tiempo de despliegue completo: 7m 18s*
 
 En la imagen anterior se muestra el despliegue completo de todas las aplicaciones y servicios, lo cual ha llevado aproximadamente 7 minutos y 18 segundos.
@@ -19,6 +20,7 @@ En la imagen anterior se muestra el despliegue completo de todas las aplicacione
 ### Despliegue Selectivo - Solo Web App
 
 ![Despliegue Selectivo](2.png)
+
 *Tiempo de despliegue selectivo (solo Web App): 1m 19s*
 
 En la segunda imagen, se ilustra el despliegue selectivo únicamente de la aplicación web. Se observa que este proceso ha tardado tan solo 1 minuto y 19 segundos, evidenciando la significativa mejora en el tiempo de despliegue al realizar actualizaciones puntuales en servicios específicos.
