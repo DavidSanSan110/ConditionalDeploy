@@ -1,10 +1,10 @@
 ## Conditional Deployment
 
-The project employs conditional deployment strategies using GitHub Actions workflows to facilitate targeted and automated deployment based on specific conditions or events within the repository.
+The project employs **conditional deployment** strategies using GitHub Actions workflows to facilitate targeted and automated deployment based on specific conditions or events within the repository.
 
-Conditional deployment allows for the execution of deployment tasks selectively, triggered by particular events or changes. These workflows are designed to deploy services only when relevant changes occur in the associated directories, ensuring precision in deployment processes and avoiding unnecessary deployments.
+Conditional deployment allows for the execution of deployment tasks **selectively**, triggered by particular events or changes. These workflows are designed to deploy services only when relevant changes occur in the associated directories, ensuring precision in deployment processes and **avoiding unnecessary deployments**.
 
-The conditional deployment setup ensures that only the necessary services are built, updated, or deployed in response to changes pushed to the respective directories, optimizing the deployment workflow and maintaining a streamlined deployment process.
+The conditional deployment setup ensures that only the **necessary services are built, updated, or deployed in response to changes pushed** to the respective directories, optimizing the deployment workflow and maintaining a streamlined deployment process.
 
 
 ## Deployment Times
@@ -15,7 +15,9 @@ The conditional deployment setup ensures that only the necessary services are bu
 
 *Complete deployment time: 7m 18s*
 
-The first image shows the complete deployment of the project, including the web application, ingest service, and coordination service. The deployment process took 7 minutes and 18 seconds to complete. You can perform a full deploy by disabling the conditional deployment workflows, enabling the "Build All" workflow and pushing a change to the repository.
+The first image shows the **complete deployment** of the project, including the web application, ingest service, and coordination service. The deployment process took **7 minutes and 18 seconds** to complete. 
+
+You can perform a **full deploy** by disabling the conditional deployment workflows, enabling the "Build All" workflow and pushing a change to the repository.
 
 ![Workflows](3.png)
 
@@ -27,17 +29,17 @@ The first image shows the complete deployment of the project, including the web 
 
 *Selective deployment time: 1m 19s*
 
-The second image shows the deployment of the web application service only. The deployment process took 1 minute and 19 seconds to complete.
+The second image shows the **deployment of the web application service only**. The deployment process took **1 minute and 19 seconds** to complete.
 The selective deployment of the web application service was significantly faster than the full deployment, taking only 1 minute and 19 seconds to complete. This is a 5.5x improvement in deployment time compared to the full deployment and the web app is the largest service in the project, so for other services, the improvement in deployment time would be even greater.
 
 
 ## Optimized Conditional Deployment
 
-The project implements targeted conditional deployment strategies through GitHub Actions workflows, optimizing the deployment process by executing specific workflows based on changes made within the repository.
+The project implements targeted **conditional deployment** strategies through GitHub Actions workflows, **optimizing** the deployment process by executing specific workflows based on changes made within the repository.
 
-When changes are made solely in a specific service directory, such as `project-web-app/`, only the corresponding workflow, in this case, the "Build Web App Workflow," is triggered. Consequently, the workflow selectively handles tasks pertinent to that service, such as checking out the updated code, removing and redeploying the container associated with the web application service.
+When changes are made solely in a **specific service directory**, such as `project-web-app/`, only the corresponding workflow, in this case, the "Build Web App Workflow," is triggered. Consequently, the workflow **selectively** handles tasks pertinent to that service, such as checking out the updated code, removing and redeploying the container associated with the web application service.
 
-This tailored approach to deployment minimizes unnecessary actions by focusing deployment efforts solely on the affected service. As a result, significant improvements in deployment times are achieved. Reducing the deployment scope to only the affected service avoids the need to rebuild or redeploy unrelated services, contributing to faster and more efficient deployment processes.
+This tailored approach to deployment **minimizes unnecessary actions** by focusing deployment efforts solely on the affected service. As a result, significant improvements in deployment times are achieved. **Reducing the deployment scope** to only the affected service avoids the need to rebuild or redeploy unrelated services, contributing to faster and more efficient deployment processes.
 
 By leveraging conditional deployment workflows, this optimized deployment strategy ensures a streamlined and expedited deployment experience, minimizing downtime and enhancing development efficiency.
 
@@ -65,7 +67,7 @@ The directory structure of this project is organized as follows:
 
 ## Docker Compose Structure
 
-The project utilizes Docker Compose for orchestrating and managing the deployment of its services. The `docker-compose.yml` file within the project's root directory defines the configuration for running multiple interconnected containers.
+The project utilizes **Docker Compose** for orchestrating and managing the deployment of its services. The `docker-compose.yml` file within the project's root directory defines the configuration for running multiple interconnected containers.
 
 The structure of the Docker Compose file (`docker-compose.yml`) is as follows:
 
